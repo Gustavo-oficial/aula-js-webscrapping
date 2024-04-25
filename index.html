@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Manipulando a DOM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- DIV que será manipulada -->
+  <div id="manipula">
+    <p>Com base nos argumentos apresentados na aula, é possivel entender que uma coisa é uma coisa e outra coisa é outra coisa, admito que não concordo nem discordo, muito pelo contrário.
+    </p>
+    <p class="paragrafo">É factivel que a Terra é um dos planetas mais conhecidos do mundo, mesmo sabendo que a vida é uma sucessão de sucessivos que sucedem sucessivamente sem cessar.Agora, mais do que nunca, é a hora, afinal, o importante é o que importa, pois onde quer que você esteja, você sempre estará lá.
+    </p>
+  </div>
+  <!-- FIM da DIV que foi manipulada -->
+
+
+  <h2 class="chamada"> Altere o Texto acima clicando nos botões</h2>
+
+
+  <!-- DIV que armazenará todos os botões -->
+  <div id="botoes">
+    <!-- Botão X - -->
+    <input type="button" value="Atualizar" onclick="window.location.reload()"/>
+    <!--Fim Botão X-->
+    <!-- Botão X - -->
+    <input type="button" value="Tamanho fonte" onclick="changeFontSize()"/>
+    <!--Fim Botão X-->
+    <!-- Botão X - -->
+    <input type="button" value="Cor fonte" onclick="changeFontColor()"/>
+    <!--Fim Botão X-->
+    <!-- Botão X - -->
+    <input type="button" value="Background Color" onclick="changeBackgroundColor()"/>
+    <!--Fim Botão X-->
+    <!-- Botão X - -->
+    <input type="button" value="Italico" onclick="changeOfItalico()"/>
+    <!--Fim Botão X-->
+    <!-- Botão X - -->
+    <input type="button" value="Negrito" onclick="negrito()"/>
+    <!--Fim Botão X-->
+    <!-- Botão X - -->
+    <input type="button" value="Borda" onmouseenter="border()"/>
+    <!--Fim Botão X-->
+    <!-- Botão X - -->
+    <input type="button" value="Sem borda" onmouseenter="unsetBorder()"/>
+    <!--Fim Botão X-->
+    <!-- Botão X - -->
+    <input type="button" value="Esconder div" onclick="hide()"/>
+    <!--Fim Botão X-->
+    <!-- Botão X - -->
+    <input type="button" value="Aparecer div" onclick="display()"/>
+    <!--Fim Botão X-->
+    <!-- Botão X - -->
+    <input type="button" value="Não" onclick="not()"/>
+    <!--Fim Botão X-->
+    <!-- Botão X - -->
+    <input type="button" value="X" />
+    <!--Fim Botão X-->
+    <!-- Botão X - -->
+    <input type="button" value="X" />
+    <!--Fim Botão X-->
+    <!-- Botão X - -->
+    <input type="button" value="X" />
+    <!--Fim Botão X-->
+    <!-- Botão X - -->
+    <input type="button" value="X" />
+    <!--Fim Botão X-->
+    <!-- Botão X - -->
+    <input type="button" value="X" />
+    <!--Fim Botão X-->
+    <!-- Botão X - -->
+    <input type="button" value="X" />
+    <!--Fim Botão X-->
+    <!-- Botão X - -->
+    <input type="button" value="X" />
+    <!--Fim Botão X-->
+
+  </div>
+  <!-- FIM da DIV que armazena todos os botões -->
+
+
+  <img id="image" src="xuxa.jpg">
+
+  <script> // Começa a brincadeira com JS
+    // Botão 2 - font size
+    function changeFontSize() {
+      document.getElementById("manipula").style.fontSize = "5rem"
+    }
+    //fim do Botão X
+    // Botão X - xx
+    function x() {
+
+}
+//fim do Botão X
+    // Botão 3 - xx
+  function changeFontColor() {
+    document.getElementById("manipula").style.color = "#000000"
+  }
+//fim do Botão X
+    // Botão 4 - xx
+  function changeBackgroundColor() {
+    document.getElementById("manipula").style.backgroundColor = "pink"
+  }
+//fim do Botão X
+    // Botão 5 - xx
+    function changeOfItalico() {
+      document.getElementById("manipula").style.fontStyle = "italic"
+    }
+    //fim do Botão X
+    // Botão 6 - xx
+    function negrito() {
+      document.getElementById("manipula").style.fontWeight = "bold"
+    }
+    //fim do Botão X
+    // Botão 7 - xx
+    function border() {
+      document.getElementById("manipula").style.border = "0.5rem solid blue"
+    }
+    //fim do Botão X
+    // Botão 8 - xx
+    function unsetBorder() {
+      document.getElementById("manipula").style.border = "none"
+    }
+    //fim do Botão X
+    // Botão 9 - xx
+    function hide() {
+      document.getElementById("manipula").style.display = "none"
+    }
+    //fim do Botão X
+    // Botão 10 - xx
+    function display() {
+      document.getElementById("manipula").style.display = "block"
+    }
+    //fim do Botão X
+    // Botão 11 - xx
+    function not() {
+      document.getElementsByClassName("chamada")[0].innerHTML = "NOT"
+    }
+    //fim do Botão X
+    // Botão X - xx
+    function x() {
+
+    }
+    //fim do Botão X
+    // Botão X - xx
+    function x() {
+
+    }
+    //fim do Botão X
+    // Botão X - xx
+    function x() {
+
+    }
+    //fim do Botão X
+    // Botão X - xx
+    function x() {
+
+    }
+//fim do Botão X
+  </script> <!-- Termina a brincadeira com JS -->
+
+  <br>
+  <hr>
+</body>
+
+</html>
